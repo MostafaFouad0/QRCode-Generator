@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <div class="in">
+        <h1>QR Generator</h1>
+        <p>Convert your URL to QR Code</p>
+        <input type="text" placeholder="URL" id="inpt" />
+        <p id="error" style="display: none">Enter a valid URL</p>
+        <div class="btn-container">
+          <button type="button" id="btn">Generate</button>
+        </div>
+      </div>
+      <div class="output">
+        <div id="qr-img">
+          <img src="./assets/qr-img-example.png" alt="qr-image" id="image" />
+        </div>
+        <a id="download-link" style="display: none">Download QR Code</a>
+      </div>
+    </div>
+    <div class="social">
+      <div>
+        <img src="./assets/github_icon.png" alt="github icon" id="git" />
+      </div>
+      <div>
+        <img
+          src="./assets/linkedin_icon.png"
+          alt="linkedin icon"
+          id="linkedin"
+        />
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
